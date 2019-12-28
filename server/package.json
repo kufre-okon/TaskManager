@@ -1,0 +1,45 @@
+{
+  "name": "taskapp",
+  "version": "1.0.0",
+  "description": "Simple task tracker RESTful API",
+  "main": "app.js",
+  "scripts": {
+    "start": "SET NODE_ENV=development&& nodemon --exec babel-node app.js",
+    "test": "SET NODE_ENV=test&& mocha --timeout 10000 --require @babel/register 'tests/**/**.spec.js'"
+  },  
+  "keywords": [
+    "Task",
+    "Task Management"
+  ],
+  "author": "Kufre Okon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kufre-okon/TaskManagement/issues"
+  },  
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.3",
+    "mongoose-seed": "^0.6.0",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.3.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "mocha": "^6.2.1",
+    "nodemon": "^1.19.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0"
+  }
+}
